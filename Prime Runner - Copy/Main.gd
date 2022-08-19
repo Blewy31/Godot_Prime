@@ -14,14 +14,11 @@ func _ready():
 func _process(delta):
 	player_pos = $Player.translation
 	
-	if player_pos.z <= (Global.ground_loc.z + 50):
-		print_debug("adding")
-		print_debug(player_pos.z)
-		print_debug(Global.ground_loc.z)
+	if player_pos.z <= (Global.ground_loc.z + 60):
+#		print_debug("adding")
+#		print_debug(player_pos.z)
+#		print_debug(Global.ground_loc.z)
 		make_ground()
-	if (player_pos.z - 50) <= Global.ground_loc.z:
-		print_debug('deleting')
-		emit_signal("del_ground")
 
 func make_ground():
 	var ground = cylinder.instance()

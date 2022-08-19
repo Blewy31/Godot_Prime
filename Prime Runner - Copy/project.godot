@@ -20,7 +20,8 @@ Global="*res://Global.gd"
 
 [display]
 
-window/size/width=1200
+window/size/width=600
+window/size/height=300
 window/handheld/orientation="sensor_landscape"
 
 [gui]
